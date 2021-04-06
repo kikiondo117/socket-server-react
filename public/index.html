@@ -16,7 +16,8 @@
   <!-- Connecto al servidor socket -->
   <script>
     // Socket del cliente
-    const socket = io('http://localhost:8080')
+    // const socket = io('http://localhost:8080')
+    const socket = io('https://react-socket-server-kikis.herokuapp.com/')
 
     socket.on('mensaje-bienvenida', (data) => {
       console.log('El servidor emitió algo:', data)
